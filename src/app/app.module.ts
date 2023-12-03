@@ -9,6 +9,9 @@ import { CustomTextComponent } from './custom-text/custom-text.component';
 import { CustomSelectComponent } from './custom-select/custom-select.component';
 import { CustomCheckBoxComponent } from './custom-check-box/custom-check-box.component';
 import { CustomImageComponent } from './custom-image/custom-image.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PageOneComponent } from './page-one/page-one.component';
+import { PageTwoComponent } from './page-two/page-two.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { CustomImageComponent } from './custom-image/custom-image.component';
     CustomTextComponent,
     CustomSelectComponent,
     CustomCheckBoxComponent,
-    CustomImageComponent
+    CustomImageComponent,
+    PageOneComponent,
+    PageTwoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

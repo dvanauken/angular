@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+.horiztonal {
+  display: flex;
+  flex-direction: row; /* This is the default direction */
+  justify-content: flex-start; /* Align items horizontally in center */
+  align-items: center; /* Align items vertically in center */
+  gap: 10px;
+  margin: 10px;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Align items vertically in center */
+  align-items: flex-start; /* Align items horizontally in center */
+  background: lightcoral;
+  gap: 10px;
+  margin: 10px;
+}

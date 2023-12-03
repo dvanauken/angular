@@ -86,26 +86,12 @@ In Angular, the default selector prefix for components is 'app'. You can change 
      ```
    - Replace `custom` with your desired prefix.
 
-## Defining a Component in Angular
+## Component Setup
+```bash
+ng generate component custom-image 
+```
 
-In Angular, a component controls a patch of screen called a view. To define a component, follow these steps:
-
-1. **Create the Component**: Use the Angular CLI command to generate a new component. For example, to create a `custom-image` component, use the command:
-
-   ```bash
-   ng generate component custom-image 
-
-### Edit the Component Class
-Open the `.ts` file of your component and add your logic. For instance:
-
-```typescript
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'custom-image',
-  templateUrl: './custom-image.component.html',
-  styleUrls: ['./custom-image.component.css']
-})
-export class CustomImageComponent {
-  // Component logic goes here
-}
+## Routing Setup
+```bash
+ng generate module app-routing --flat --module=app
+```

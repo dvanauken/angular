@@ -1,26 +1,15 @@
-<div>
-  <h1>Welcome to My Angular App</h1>
-
-  <!-- Usage of custom button component -->
-  <custom-button (btnClick)="onClick()">
-    Click Me
-  </custom-button>
-
-  <br>
-
-  <custom-text>
-
-  </custom-text>
-
-  <!-- app.component.html -->
-  <custom-select [options]="myOptions" [(ngModel)]="selectedOption"></custom-select>
-
-  <custom-check-box label="Check me"></custom-check-box>
-
-  <custom-image
-    src="assets/default.jpg"
-    alt="Descriptive text for the image"
-    cssClass="optional-css-class">
-  </custom-image>
-
+<!-- app.component.html -->
+<div class="holy-grail-layout">
+  <header>Header</header>
+  <nav>
+    <ul>
+      <li><a routerLink="/page1">Page 1</a></li>
+      <li><a routerLink="/page2">Page 2</a></li>
+    </ul>
+  </nav>
+  <main>
+    <router-outlet></router-outlet> <!-- Place for page content -->
+  </main>
+  <aside>Right Sidebar Content</aside> <!-- Right sidebar -->
+  <footer>Footer</footer>
 </div>
