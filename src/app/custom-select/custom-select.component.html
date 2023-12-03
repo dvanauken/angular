@@ -1,0 +1,4 @@
+<!-- custom-select.component.html -->
+<select [(ngModel)]="selectedValue">
+  <option *ngFor="let option of options" [value]="option.value">{{ option.label }}</option>
+</select>
