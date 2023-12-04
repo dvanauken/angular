@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { PageOneComponent } from "./page-one/page-one.component";
 import { PageTwoComponent } from "./page-two/page-two.component";
+import { UserListComponent } from "./user-list/user-list.component";
 
 const routes: Routes = [
   { path: 'page1', component: PageOneComponent },
   { path: 'page2', component: PageTwoComponent },
+  { path: 'users', component: UserListComponent },
   { path: '', redirectTo: '/page1', pathMatch: 'full' } // Default redirect
 ];
 

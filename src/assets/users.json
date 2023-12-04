@@ -1,0 +1,138 @@
+[
+  {
+    "username": "user1675",
+    "first_name": "Margaret",
+    "middle_name": "C.",
+    "last_name": "Thomas",
+    "age": 43,
+    "active": true,
+    "member_since": "2020-06-24",
+    "sex": "F",
+    "status": "Platinum"
+  },
+  {
+    "username": "user1775",
+    "first_name": "Margaret",
+    "middle_name": "W.",
+    "last_name": "Harris",
+    "age": 32,
+    "active": false,
+    "member_since": "2020-04-10",
+    "sex": "W",
+    "status": "Gold"
+  },
+  {
+    "username": "user8517",
+    "first_name": "Michael",
+    "middle_name": "H.",
+    "last_name": "Martinez",
+    "age": 33,
+    "active": false,
+    "member_since": "2021-02-16",
+    "sex": "M",
+    "status": "Bronze"
+  },
+
+
+  {
+    "username": "user3692",
+    "first_name": "Michael",
+    "middle_name": "G.",
+    "last_name": "Hernandez",
+    "age": 24,
+    "active": true,
+    "member_since": "2020-04-28",
+    "sex": "F",
+    "status": "Platinum"
+  },
+  {
+    "username": "user5092",
+    "first_name": "Mary",
+    "middle_name": "L.",
+    "last_name": "Anderson",
+    "age": 22,
+    "active": false,
+    "member_since": "2021-08-14",
+    "sex": "M",
+    "status": "Bronze"
+  },
+  {
+    "username": "user6133",
+    "first_name": "Christopher",
+    "middle_name": "C.",
+    "last_name": "Jones",
+    "age": 28,
+    "active": false,
+    "member_since": "2021-04-30",
+    "sex": "M",
+    "status": "Silver"
+  },
+  {
+    "username": "user4533",
+    "first_name": "Richard",
+    "middle_name": "D.",
+    "last_name": "Martinez",
+    "age": 49,
+    "active": true,
+    "member_since": "2021-12-20",
+    "sex": "M",
+    "status": "Bronze"
+  },
+  {
+    "username": "user1102",
+    "first_name": "Joseph",
+    "middle_name": "M.",
+    "last_name": "Perez",
+    "age": 46,
+    "active": false,
+    "member_since": "2021-04-17",
+    "sex": "M",
+    "status": "Bronze"
+  },
+  {
+    "username": "user1270",
+    "first_name": "Lydia",
+    "middle_name": "P.",
+    "last_name": "Johnson",
+    "age": 33,
+    "active": true,
+    "member_since": "2022-01-04",
+    "sex": "F",
+    "status": "Gold"
+  },
+  {
+    "username": "user8278",
+    "first_name": "Elizabeth",
+    "middle_name": "A.",
+    "last_name": "Hernandez",
+    "age": 32,
+    "active": false,
+    "member_since": "2021-02-03",
+    "sex": "F",
+    "status": "Bronze"
+  },
+  {
+    "username": "user8924",
+    "first_name": "Daniel",
+    "middle_name": "L.",
+    "last_name": "Martin",
+    "age": 42,
+    "active": true,
+    "member_since": "2022-12-26",
+    "sex": "M",
+    "status": "Silver"
+  },
+  {
+    "username": "user6144",
+    "first_name": "Michael",
+    "middle_name": "R.",
+    "last_name": "Thomas",
+    "age": 43,
+    "active": true,
+    "member_since": "2023-04-10",
+    "sex": "M",
+    "status": "Platinum"
+  }
+
+
+]
