@@ -1,6 +1,10 @@
-import {Component, OnInit} from '@angular/core';
-import { UserService } from '../user.service';
+import { CellClickedEvent } from 'ag-grid-community';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'; // Import Router
+import { UserService } from '../user.service'; // Assuming UserService is correctly implemented
 import { User } from '../user.model';
+
+
 
 @Component({
   selector: 'user-list',
@@ -9,7 +13,12 @@ import { User } from '../user.model';
 })
 export class UserListComponent implements OnInit{
   columnDefs = [
-    { field: 'username' },
+    { 
+      headerName: "User Name",
+      field: 'username',
+      width: 100,
+      onCellClicked: this.onUsernameClicked.bind(this) 
+    },
     { field: 'first_name' },
     { field: 'middle_name' },
     { field: 'last_name' },
@@ -22,11 +31,10 @@ export class UserListComponent implements OnInit{
 
   rowData: any[] = []; // This will be populated with your JSON data
 
-  constructor(private userService: UserService) {}
-
+  //constructor(private userService: UserService) {}
+  constructor(private router: Router, private userService: UserService) {}
 
   ngOnInit(): void {
-
     this.userService.getUsers().subscribe(
       data => {
         this.rowData = data;
@@ -35,7 +43,12 @@ export class UserListComponent implements OnInit{
         console.error('Error fetching data: ', error);
       }
     );
+  }
 
-
+  onUsernameClicked(event: CellClickedEvent) {
+    console.log('Clicked user:', event.data);
+    const userData = event.data;
+    this.userService.setCurrentUser(userData);
+    this.router.navigate(['/user-form', userData.username]);
   }
 }

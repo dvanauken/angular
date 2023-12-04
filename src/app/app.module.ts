@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { PageOneComponent } from './page-one/page-one.component';
 import { PageTwoComponent } from './page-two/page-two.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { UserListComponent } from './user-list/user-list.component';
     CustomImageComponent,
     PageOneComponent,
     PageTwoComponent,
-    UserListComponent
+    UserListComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
