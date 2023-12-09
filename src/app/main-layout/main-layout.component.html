@@ -1,0 +1,18 @@
+<div class="holy-grail-layout">
+    <header class="header-layout">
+      <img src="assets/logo.png" width="40" height="40"/>
+      <button (click)="logout()" class="logout-button">Logout</button>
+    </header>
+    <nav>
+      <ul>
+        <li><a routerLink="/app/page1">Page 1</a></li>
+        <li><a routerLink="/app/page2">Page 2</a></li>
+        <li><a routerLink="/app/users">Users</a></li>
+      </ul>
+    </nav>
+    <main>
+      <router-outlet></router-outlet> <!-- Place for page content -->
+    </main>
+    <aside>Right Sidebar Content</aside> <!-- Right sidebar -->
+    <footer>Footer</footer>
+</div>

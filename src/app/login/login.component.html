@@ -1,0 +1,20 @@
+<form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="username" name="username" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="password" name="password" required>
+    </div>
+    <div *ngIf="loginFailed" class="error-message">
+      Login failed. Please check your username and password.
+    </div>
+    <!-- Add this inside your form in login.component.html -->
+    <button type="submit" class="login-button">Login</button>
+    <div class="login-links">
+    <a href="#" class="forgot-password">Forgot your password?</a>
+    <a href="#" class="create-account">Create account</a>
+    </div>
+</form>
+  

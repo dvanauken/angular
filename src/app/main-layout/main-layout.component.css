@@ -1,0 +1,67 @@
+/* Holy Grail Layout with a simple color scheme */
+.holy-grail-layout {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 200px 1fr 200px; /* Adjust column widths as needed */
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  background-color: #f3f4f6; /* Light gray */
+  color: #333333; /* Dark text color */
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; /* Aligns items to both ends */
+  align-items: center; /* Vertically center the items */
+}
+
+nav {
+  grid-area: nav;
+  background-color: #e2e2e2; /* Slightly darker gray */
+  color: #333333;
+  padding: 10px;
+}
+
+main {
+  grid-area: main;
+  background-color: #ffffff; /* White background for main content */
+  color: #333333;
+  padding: 10px;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #e2e2e2; /* Same as nav for symmetry */
+  color: #333333;
+  padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #f3f4f6; /* Same as header for consistency */
+  color: #333333;
+  padding: 10px;
+  text-align: center;
+}
+
+.logout-button {
+  margin-left: auto;
+  background-color: #007bff; /* Primary color */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #0056b3;
+}

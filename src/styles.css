@@ -21,7 +21,7 @@
   flex-direction: column; /* Stack children vertically */
   justify-content: center; /* Align items vertically in center */
   align-items: flex-start; /* Align items horizontally in center */
-  background: lightcoral;
+  background: #f3f4f6;
   gap: 10px;
   margin: 10px;
 }

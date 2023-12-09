@@ -16,6 +16,9 @@ import { PageOneComponent } from './page-one/page-one.component';
 import { PageTwoComponent } from './page-two/page-two.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserFormComponent } from './user-form/user-form.component';
+import { LoginComponent } from './login/login.component';
+import { LoginLayoutComponent } from './login-layout/login-layout.component';
+import { MainLayoutComponent } from './main-layout/main-layout.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { UserFormComponent } from './user-form/user-form.component';
     PageOneComponent,
     PageTwoComponent,
     UserListComponent,
-    UserFormComponent
+    UserFormComponent,
+    LoginComponent,
+    LoginLayoutComponent,
+    MainLayoutComponent
   ],
   imports: [
     BrowserModule,

@@ -49,6 +49,6 @@ export class UserListComponent implements OnInit{
     console.log('Clicked user:', event.data);
     const userData = event.data;
     this.userService.setCurrentUser(userData);
-    this.router.navigate(['/user-form', userData.username]);
+    this.router.navigate(['/app/user-form', userData.username]);
   }
 }

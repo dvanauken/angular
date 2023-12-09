@@ -32,11 +32,11 @@ export class UserFormComponent implements OnInit {
   }
 
   onSubmit() {
-    this.router.navigate(['/users']);
+    this.router.navigate(['/app/users']);
   }
 
   onCancel() {
-    this.router.navigate(['/users']);
+    this.router.navigate(['/app/users']);
   }
   
 }
