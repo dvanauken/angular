@@ -13,21 +13,26 @@ export class LoginComponent {
   password: string = 'admin';
   loginFailed: boolean = false; // boolean flag to indicate login failure
 
-
   constructor(private authService: AuthService, private router: Router) {
-
   }
 
   onSubmit() {
-    console.log('Username:', this.username);
-    console.log('Password:', this.password);
-  
-    if (this.authService.login(this.username, this.password)) {
-      this.router.navigate(['/app/page1']); // navigate to home or other page on successful login
-      this.loginFailed = false; // Reset login failure flag
-    } else {
-      // handle login failure
-      this.loginFailed = true; // Set login failure flag
-    }
+    this.authService.login(this.username, this.password).subscribe(
+      isLoggedIn => {
+        if (isLoggedIn) {
+          // navigate to home or other page on successful login
+          this.router.navigate(['/app/page1']);
+          this.loginFailed = false; // Reset login failure flag
+        } else {
+          // handle login failure
+          this.loginFailed = true; // Set login failure flag
+        }
+      },
+      error => {
+        // handle error
+        this.loginFailed = true; // Set login failure flag
+        console.error('Login error:', error);
+      }
+    );
   }
-  }
+}
